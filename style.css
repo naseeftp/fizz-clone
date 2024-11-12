@@ -1,0 +1,113 @@
+body{
+  overflow-x: hidden;
+  margin-left: 0px;
+}
+
+
+
+.dropdown-menu{
+  border-bottom: 3px solid black !important;/* setting dropdown border*/
+}
+.nav-link:hover{
+  color: red !important;
+}
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1); /* Makes the icon white */
+}
+
+  .container-fluid {
+    background-color: rgb(10, 11, 39); /* Dark blue background for navbar */
+    padding: 0; /* Remove any padding from container */
+  
+}
+
+.navbar {
+    height: 70px; /* Fixed height for navbar */
+    line-height: 70px; /* Align text vertically */
+   position: fixed;
+   z-index: 100;
+
+  
+}
+
+.navbar-nav {
+    margin-left: 0;
+    padding-left: 0; /* Remove padding if any */
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+}
+
+.main{
+  width: 100%; /* first page image */
+}
+.rotatingimagesection{
+
+    background-color: black;
+    height: 750px;
+    width: 100%;
+    display: flex;             /* first page first part */
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+.rotatingimage{
+  width: 150px;
+  height: 350px;
+  background-size: 100% 100%;               /*rotating image animation settings*/
+  position: relative;
+  animation: rotate 1s linear infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -2s);
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+  z-index: 50;
+
+}
+.rotatingimagetext{
+  color: white;         /*second page first section heading*/
+  margin-left: -190px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight:bold;
+  font-size: 55px;
+ z-index: 75;
+  
+}
+.rotatingimageparagraph{    /*second page second section paragraph*/
+  padding-top:150px;   
+  font-family: "merivaregular";
+  font-size: 20px;
+
+}
+.fizzbottle{
+  width: 100%;    /*third page image*/
+}
+.rotate{
+  width: 100%;
+}
+.row{
+  font-size: 14px;   /*setting footer section font size*/
+}
+.footer2{
+  font-weight:500;
+}
+.footer2:hover{
+  text-decoration: underline;
+  color: rgb(246, 13, 13);
+}
+.footer3{
+  font-weight:500; 
+}
+.footer3:hover{
+  text-decoration: underline;
+  color: rgb(246, 13, 13);
+}
+@keyframes  rotate {
+	to {
+		transform: rotate(360deg);
+	}
+}
